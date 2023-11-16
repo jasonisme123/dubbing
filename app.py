@@ -46,7 +46,7 @@ def video_merge_audio(video_name,audio_name):
 
 def main():
     video_name = 'overview.mp4'
-    # video2audio(video_name)
+    video2audio(video_name)
     audio2srt()
     video_merge_audio(video_name,'./audios/0.wav')
     video_merge_srt('finally.mp4')
