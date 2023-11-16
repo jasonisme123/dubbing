@@ -84,7 +84,7 @@ def text_2_audio(text,start_time,end_time,index,rate='+20%'):
     global first_start_time_inSecond
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
-    tts = edge_tts.Communicate(text=text, voice="zh-CN-XiaoxiaoNeural", rate=rate)
+    tts = edge_tts.Communicate(text=text, voice="zh-CN-YunxiaNeural", rate=rate)
     audio_filePath = './audios/'+str(index)+'.mp3'
     loop.run_until_complete(tts.save(audio_filePath))
     loop.close()
