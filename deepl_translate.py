@@ -80,19 +80,16 @@ def translate(data):
         raise e
 
 
-if __name__ == '__main__':
-    for i in range(0,15):
-        while True:
-            demodata = {
-                'text':'i am good,what about you?',
-                'source_lang':'en',
-                'target_lang':'zh'
-                }
-            try:
-                res = translate(demodata)
-                print(res['result']['texts'][0]['alternatives'][0]['text'])
-                break
-            except Exception as e:
-                print('休息一会')
-                time.sleep(2)
+def deepLtranslator(text):
+    try:
+        demodata = {
+                    'text':text,
+                    'source_lang':'en',
+                    'target_lang':'zh'
+                    }
+        res = translate(demodata)
+        return res['result']['texts'][0]['alternatives'][0]['text']
+    except:
+        raise Exception('deepL error')
+
             
