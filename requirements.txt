@@ -1,0 +1,6 @@
+moviepy
+googletranslate-python
+flask
+faster-whisper
+edge-tts
+asyncio
