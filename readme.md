@@ -8,3 +8,7 @@
 AI配音选择的是微软的
 
 语音识别模型项目是faster-whisper
+
+requirements.txt 有需要安装的包，如有缺漏自行安装
+
+
